@@ -6,7 +6,7 @@ from ultralytics import YOLO
 app = FastAPI()
 
 # Load your trained model
-model = YOLO("./runs/detect/bird_detector_v17/weights/best.pt")   # Make sure best.pt is in the repo
+model = YOLO("./runs/detect/bird_detector_v1/weights/best.pt")   # Make sure best.pt is in the repo
 
 @app.post("/detect")
 async def detect(request: Request):
